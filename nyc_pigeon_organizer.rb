@@ -4,7 +4,8 @@ def nyc_pigeon_organizer(data)
     attribute.each do |att, names|
       names.each do |name|
         pigeon_list[name] = {} if !pigeon_list[name]
-        pigeon_list[name][trait]
+        pigeon_list[name][trait] = [] if !pigeon_list[name][trait]
+        
       end 
     end 
   end 
