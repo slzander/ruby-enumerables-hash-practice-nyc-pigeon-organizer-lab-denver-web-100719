@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         pigeon_list[name] = {} if !pigeon_list[name]
         pigeon_list[name][trait] = [] if !pigeon_list[name][trait]
-        pigeon_list[name][trait].push
+        pigeon_list[name][trait].push(att.to_s)
       end 
     end 
   end 
